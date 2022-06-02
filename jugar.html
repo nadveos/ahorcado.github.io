@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    
+
+    <title>Juego del ahorcado</title>
+</head>
+<body>
+    
+        <aside>
+            <p id="listo">La Palabra Ganadora es <span id="palabra"></span></p>
+            <span id="cantidad"></span>
+            <span id="letras"></span>
+            <input type="text" id="letra" maxlength="1" >
+            <input type="button" value="Comprobar" id="comprobar">
+            <form id="formularioParar" action="index.html">
+                <input id="parar" value="Parar Juego" type="submit">
+            </form>
+            <img src="media/ahorcado.png" id="ahorcado">
+            <h3>Ultima Letra Usada</h3>
+            <span id="letrasUsadas"></span>
+            <h1 id="lose"></h1>
+            <h1 id="vic"></h1>
+            
+        </aside>
+        
+</body>

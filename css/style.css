@@ -1,0 +1,89 @@
+*{
+    font-family: monospace, cursive;
+    font-weight:600;
+}
+h1{
+    text-transform: uppercase;
+    position: relative;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word;
+    border-radius: 5px;
+}
+span{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+#comprobar{
+    margin-top: .5rem;
+    width: 10rem;
+    background-color: #14ef;
+    color: aliceblue;
+    padding: 1rem;
+}
+#parar{
+    margin-top: .5rem;
+    width: 10rem;
+    background-color: #14ef;
+    color: aliceblue;
+    padding: 1rem;
+}
+#invisible{
+    display: none;
+}
+#ahorcado{
+    width: 249px;
+    height: 298px;
+    margin-top: 1rem;
+    position: relative;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+#play{
+   text-align: center;
+    border-style: none;
+    background-color: #14ef;
+    color: aliceblue;
+    width: 10rem;
+    padding: .5rem;
+    border-radius: 5px;
+}
+#titulo{
+    display: block;
+    font-family: monospace;
+    font-size: 3rem;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 21ch;
+    animation: escribiendo 5s steps(21), 
+    parpadeo .5s infinite step-end alternate ;
+    overflow: hidden;
+}
+#letra{
+    border-style: none;
+    background-color: transparent;
+    color: darkgray;
+    margin: 0.5rem;
+    height: 3rem;
+    width: 30%;
+}
+@keyframes escribiendo{
+    from {width: 0}
+}
+@keyframes parpadeo{
+    50%{border-color: transparent}
+}
